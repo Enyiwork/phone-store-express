@@ -28,7 +28,7 @@ router.get("/phones", (req, res, next) => {
 router.post("/phones", (req, res, next) => {
     const thePhone = new Phone({
         brand: req.body.brand,
-        name: req.body.name,
+        name:  req.body.name,
         image: req.body.image,
         specs: req.body.specs
     });
